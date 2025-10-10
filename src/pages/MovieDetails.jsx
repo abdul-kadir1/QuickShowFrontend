@@ -6,6 +6,7 @@ import { Heart, PlayCircleIcon, StarIcon } from "lucide-react";
 import timeFormat from "../lib/timeFormat";
 import DateSelect from "../components/DateSelect";
 import MovieCard from "../components/MovieCard";
+import Loading from "../components/Loading";
 
 const MovieDetails = () => {
   const navigate = useNavigate();
@@ -15,10 +16,11 @@ const MovieDetails = () => {
 
   const getShow = async () => {
     const show = dummyShowsData.find((show) => show._id === id);
-    setShow({
+
+    if(show){setShow({
       movie: show,
       dateTime: dummyDateTimeData,
-    });
+    })}
   };
 
   useEffect(() => {
@@ -113,7 +115,7 @@ const MovieDetails = () => {
       </div>
     </div>
   ) : (
-    <div>Loading...</div>
+    <Loading /> 
   );
 };
 
