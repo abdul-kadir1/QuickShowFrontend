@@ -5,7 +5,7 @@ import Loading from '../../components/Loading';
 import Title from '../../components/admin/Title.jsx';
 
 const Dashboard = () => {
-    const currency = import.meta.env.VITE_CURRENCY
+    const currency = import.meta.env.VITE_CURRENCY 
 
     const [dashboardData,setDashboardData] = useState({
         totalBookings:0,
