@@ -11,3 +11,4 @@ const BlurCircle = ({top="auto",left="auto",right="auto",bottom="auto"}) => {
 };
 
 export default BlurCircle;
+
