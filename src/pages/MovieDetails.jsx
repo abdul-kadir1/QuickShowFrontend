@@ -43,7 +43,7 @@ const MovieDetails = () => {
           </h1>
           <div className="flex items-center gap-2 text-gray-300">
             <StarIcon className="w-5 h-5 text-primary fill-primary" />
-            {show.movie.vote_average.toFixed(1)}User Rating
+            {show.movie.vote_average.toFixed(1)}User Ratings
           </div>
 
           <p className="text-gray-400 mt-2 text-sm leading-tight max-w-xl">
